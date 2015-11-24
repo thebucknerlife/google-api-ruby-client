@@ -107,7 +107,7 @@ module Google
         @issued_at = fdata[:issued_at] || fdata["issued_at"]
       end
 
-      attr_reader(
+      attr_accessor(
         :flow, :client_id, :client_secret, :redirect_uris, :javascript_origins,
         :authorization_uri, :token_credential_uri, :access_token,
         :refresh_token, :id_token, :expires_in, :expires_at, :issued_at
